@@ -539,6 +539,10 @@ a {
   text-align: left;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .icon-left {
   text-align: left;
 }
