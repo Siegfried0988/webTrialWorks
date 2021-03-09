@@ -89,7 +89,11 @@ $(document).ready(function(){
     //讓圖片上下移動
     //(scrollPos / 2)表示每往下滾1單位，圖片就會往上0.5單位。每往上滾1單位，圖片就會往下0.5單位
     // $('#profiles').css('background-position-y', -(scrollPos / 2) + 'px')  讓背景圖滾動的效果，目前用不到
-    $('#header-ele').css('transform', 'translateY( ' + (scrollPos / 2) + 'px )')
+    //translate(x,y) 可以同時設定x及y的變化translateX()則是只設定x的變化
+    $('#header-ele').css('transform', 'translate( ' + (-scrollPos / 14) + 'px,' + (scrollPos / 2) + 'px)' )
+
+    // $('#header-ele').css('transform', 'translateX( ' + (scrollPos / 2) + 'px )' )
+    
     
 
     
@@ -103,8 +107,8 @@ $(document).ready(function(){
     //如果js也用transform來寫的話會把CSS的設定蓋過去，造成圖片位置錯誤
     //而background-position的缺點是當位置超過section的範圍時會自動被切掉
     $('.food-ele1').each(function(i){
-      //往下越往下滑scrollPos的數值就會越大，所以用130是要讓圖片可以滑到更下方。
-      if (scrollPos >= profilesPos && scrollPos < saladPos + 130){
+      //往下越往下滑scrollPos的數值就會越大，所以用110是要讓圖片可以滑到更下方。
+      if (scrollPos >= profilesPos && scrollPos < saladPos + 100){
         speed = [30, 40, 35, 30]
         $(this).animate({"background-position-y": movingDistance + 'px'}, speed[i])
         console.log('speed[i]:',speed[i]);
@@ -113,7 +117,7 @@ $(document).ready(function(){
       
 
     $('.food-ele2').each(function(i){
-      if (scrollPos >= profilesPos && scrollPos < saladPos + 110){
+      if (scrollPos >= profilesPos && scrollPos < saladPos + 80){
         speed = [40, 33, 30, 35]
         $(this).animate({"background-position-y": movingDistance + 'px'}, speed[i])
         console.log('speed[i]:',speed[i]);
