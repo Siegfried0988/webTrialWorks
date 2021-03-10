@@ -1,5 +1,5 @@
 // font
-$font-family: "Microsoft JhengHei",PMingLiU,MingLiu,"Segoe UI","Helvetica",Garuda,Arial,sans-serif;
+$font-family: "Microsoft JhengHei",PMingLiU,MingLiu;
 $font-size: 16px;
 
 // gutter
@@ -42,24 +42,35 @@ body, html {
   font-family: $font-family;
 }
 h1 {
-  font-size: $font-size*3;
+  font-size: $font-size*4;
 }
 h2 {
   font-size: $font-size*2.5;
 }
 h3 {
   font-size: $font-size*2;
+  font-family: 'Dancing Script', cursive;
 }
+h4 {
+  font-size: $font-size*2.5;
+  font-family: 'Dancing Script', cursive;
+}
+
 a {
   color: $brand-primary
 }
 
+
 //** Grid **//
 .wrap {
   overflow: hidden;
-  background-image: url(https://images.pexels.com/photos/301378/pexels-photo-301378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-position: center;
+  background-image: url(https://images.pexels.com/photos/2581022/pexels-photo-2581022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: 100% 1%;;
   background-size: contain;
+  @media (max-width: $mobile-size){
+    background-image: url(https://images.pexels.com/photos/774455/pexels-photo-774455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  
+}
 }
 .container {
   max-width: 1140px;
@@ -292,7 +303,22 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  @media (max-width: $mobile-size){
+  background-size: 80% auto;
 }
+}
+
+
+
+.logo-Img {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 8%;
+  right: 0;
+  width: 4%;
+}
+
 
 $Dishlist1: 'https://i.imgur.com/QeCssjl.png', 'https://i.imgur.com/hJqXHKc.png', 'https://i.imgur.com/pH1aYA2.png';
 $Dishlist2: 'https://i.imgur.com/Wv0a4K8.png', 'https://i.imgur.com/u6EXRNY.png', 'https://i.imgur.com/XCfidhv.png';
@@ -348,8 +374,22 @@ $Dishlist2: 'https://i.imgur.com/Wv0a4K8.png', 'https://i.imgur.com/u6EXRNY.png'
   right: 0;
 
 }
-
-
+// @media (max-width: $mobile-size){
+//   .hidden-mobile {
+//     display: none !important;
+//   }
+// }
+.footWrap {
+  overflow: hidden;
+  background-image: url(https://i.imgur.com/bsPlsOv.jpg);
+  background-position: 75%;;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media (max-width: $mobile-size){
+    background-image: url();
+  
+}
+}
 
 .foot-Img {
   background-image: url(https://i.imgur.com/bsPlsOv.jpg);
@@ -368,8 +408,9 @@ $Dishlist2: 'https://i.imgur.com/Wv0a4K8.png', 'https://i.imgur.com/u6EXRNY.png'
   position: relative;
   text-align: center;
   transform: translateY(-50%);
-  transform: rotate(7deg) translateY(0%);
+  transform: rotate(7deg) translate(-0.5%,-10%);
   top: 40%;
+  font-size:100px;
 
   // padding: 25px 35px;
   // background-color: #555;
@@ -431,7 +472,7 @@ $Dishlist2: 'https://i.imgur.com/Wv0a4K8.png', 'https://i.imgur.com/u6EXRNY.png'
 .bg-white {
   background-color: #fff;
 }
-.bg-darkBrown {
+.bg-darkBlue {
   background-color: #000514;
 }
 

@@ -5,11 +5,11 @@
 body, html {
   height: 100%;
   line-height: 1.5;
-  font-family: "Microsoft JhengHei", PMingLiU, MingLiu, "Segoe UI", "Helvetica", Garuda, Arial, sans-serif;
+  font-family: "Microsoft JhengHei", PMingLiU, MingLiu;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 64px;
 }
 
 h2 {
@@ -18,6 +18,12 @@ h2 {
 
 h3 {
   font-size: 32px;
+  font-family: "Dancing Script", cursive;
+}
+
+h4 {
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
 }
 
 a {
@@ -26,9 +32,14 @@ a {
 
 .wrap {
   overflow: hidden;
-  background-image: url(https://images.pexels.com/photos/301378/pexels-photo-301378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-position: center;
+  background-image: url(https://images.pexels.com/photos/2581022/pexels-photo-2581022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: 100% 1%;
   background-size: contain;
+}
+@media (max-width: 779px) {
+  .wrap {
+    background-image: url(https://images.pexels.com/photos/774455/pexels-photo-774455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
 }
 
 .container {
@@ -244,6 +255,20 @@ a {
   left: 0;
   right: 0;
 }
+@media (max-width: 779px) {
+  .salad-Img {
+    background-size: 80% auto;
+  }
+}
+
+.logo-Img {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 8%;
+  right: 0;
+  width: 4%;
+}
 
 .sideDishPartOne-Img1 {
   background-image: url("https://i.imgur.com/QeCssjl.png");
@@ -332,6 +357,19 @@ a {
   right: 0;
 }
 
+.footWrap {
+  overflow: hidden;
+  background-image: url(https://i.imgur.com/bsPlsOv.jpg);
+  background-position: 75%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 779px) {
+  .footWrap {
+    background-image: url();
+  }
+}
+
 .foot-Img {
   background-image: url(https://i.imgur.com/bsPlsOv.jpg);
   transform: rotate(9deg) translateY(15%) translateX(-15%);
@@ -349,8 +387,9 @@ a {
   position: relative;
   text-align: center;
   transform: translateY(-50%);
-  transform: rotate(7deg) translateY(0%);
+  transform: rotate(7deg) translate(-0.5%, -10%);
   top: 40%;
+  font-size: 100px;
 }
 
 .clearfix:after {
@@ -406,7 +445,7 @@ a {
   background-color: #fff;
 }
 
-.bg-darkBrown {
+.bg-darkBlue {
   background-color: #000514;
 }
 
